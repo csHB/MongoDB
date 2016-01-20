@@ -19,6 +19,7 @@ import com.mongodb.MongoException;
  */
 public class MongoUtil {
 
+	// 查找
 	public static void search(DBCollection collection) {
 
 		DBCursor cursor = collection.find();
@@ -29,6 +30,7 @@ public class MongoUtil {
 
 	}
 
+	// 根据条件查找， 可删除上面的search方法
 	public static void searchByObject(DBCollection collection, BasicDBObject basicDBObject) {
 
 		DBCursor cursor = collection.find(basicDBObject);
@@ -39,18 +41,21 @@ public class MongoUtil {
 
 	}
 
+	// 插入
 	public static void insert(DBCollection collection, BasicDBObject basicDBObject) {
 
 		collection.insert(basicDBObject);
 
 	}
 
+	// 插入一条链表， 链表中都为DBObject对象
 	public static void insertList(DBCollection collection, List<DBObject> list) {
 
 		collection.insert(list);
 
 	}
 
+	// 更新：originObject：要更新的对象； updateObject：更新内容
 	public static void update(DBCollection collection, BasicDBObject originObject, BasicDBObject updateObject) {
 
 		/*
@@ -63,6 +68,7 @@ public class MongoUtil {
 
 	}
 
+	// 删除
 	public static void delete(DBCollection collection, BasicDBObject basicDBObject) {
 
 		collection.remove(basicDBObject);
