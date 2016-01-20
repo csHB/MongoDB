@@ -93,11 +93,11 @@ public class MongoUtil {
 
 			DBCollection collection = db.getCollection("test");
 
-			BasicDBObject basicDBObject1 = new BasicDBObject("name", "wode");
+			//BasicDBObject basicDBObject1 = new BasicDBObject("name", "wode");
 
-			BasicDBObject basicDBObject2 = new BasicDBObject("age", 13).append("school", "bbb");
+			//BasicDBObject basicDBObject2 = new BasicDBObject("age", 13).append("school", "bbb");
 
-			BasicDBObject update = new BasicDBObject("$set", basicDBObject2);
+			//BasicDBObject update = new BasicDBObject("$set", basicDBObject2);
 
 			BasicDBObject basicDBObject3 = new BasicDBObject("name", "b3").append("age", 15).append("school", "ssss");
 
@@ -118,7 +118,7 @@ public class MongoUtil {
 			// search
 			// search(collection);
 
-			BasicDBObject basicDBObject6 = new BasicDBObject("age", 23);
+			//BasicDBObject basicDBObject6 = new BasicDBObject("age", 23);
 
 			System.out.println("-------------------");
 
