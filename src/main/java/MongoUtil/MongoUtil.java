@@ -12,6 +12,11 @@ import com.mongodb.DBObject;
 import com.mongodb.Mongo;
 import com.mongodb.MongoException;
 
+/**
+ * 
+ * @author Administrator
+ *
+ */
 public class MongoUtil {
 
 	public static void search(DBCollection collection) {
